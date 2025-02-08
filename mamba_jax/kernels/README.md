@@ -11,7 +11,7 @@ The kernel will perform the following operations:
   due to the structure of the update rule. This yields an array of size (B, L,
   D, N) in SRAM.
 - Multiply and sum with C, producing output of size (B, L, D) which we write
-  back to SRAM (`out_ref[...] = out`).
+  back to SRAM (`out_ref[...] = out`). (write back into HBM !?)
 - We checkpoint the regions with the full sized activations, so we don't need
   to store the large (B, L, D, N) after they have been used.
 
